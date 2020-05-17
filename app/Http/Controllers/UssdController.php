@@ -14,7 +14,11 @@ class UssdController extends Controller
 		    'network' => 'serviceCode',
 		    'session_id' => 'sessionId'
 		])
-		->setInput(substr(request('text'), strrpos(request('text'), '*') + 1))
+		->setInput(
+			strpos(request('text'), '*') !== false ?
+			substr(request('text'), strrpos(request('text'), '*') + 1) :
+			request('text')
+		)
 	    ->setInitialState(Welcome::class)
 	    ->setResponse(function(string $message, string $action) {
 	    	switch ($action) {
