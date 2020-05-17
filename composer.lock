@@ -1891,16 +1891,16 @@
         },
         {
             "name": "sparors/laravel-ussd",
-            "version": "v1.0.3",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sparors/laravel-ussd.git",
-                "reference": "3d339b158d8cdd41360005ed23fee42993a0e430"
+                "reference": "a7ebdf25144cd790f1c10294c0186037ae1b8dd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sparors/laravel-ussd/zipball/3d339b158d8cdd41360005ed23fee42993a0e430",
-                "reference": "3d339b158d8cdd41360005ed23fee42993a0e430",
+                "url": "https://api.github.com/repos/sparors/laravel-ussd/zipball/a7ebdf25144cd790f1c10294c0186037ae1b8dd4",
+                "reference": "a7ebdf25144cd790f1c10294c0186037ae1b8dd4",
                 "shasum": ""
             },
             "require": {
@@ -1945,7 +1945,7 @@
                 "laravel",
                 "ussd"
             ],
-            "time": "2020-05-17T09:12:16+00:00"
+            "time": "2020-05-17T12:40:38+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
