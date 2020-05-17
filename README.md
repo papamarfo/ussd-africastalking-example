@@ -63,9 +63,7 @@ curl -H "Content-Type: application/json" \
 
 Africa's Talking Simulator
 
-```bash
-https://simulator.africastalking.com:1517/
-```
+[https://simulator.africastalking.com:1517](https://simulator.africastalking.com:1517)
 
 Enjoy!!!
 
