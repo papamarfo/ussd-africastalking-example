@@ -12,7 +12,7 @@ class UssdController extends Controller
     	$ussd = Ussd::machine()->setFromRequest([
 		    'phone_number',
 		    'network' => 'serviceCode',
-		    'session_id' => 'sessionId',
+		    'session_id' => 'sessionId'
 		])
 		->setInput(substr(request('text'), strrpos(request('text'), '*') + 1))
 	    ->setInitialState(Welcome::class)
