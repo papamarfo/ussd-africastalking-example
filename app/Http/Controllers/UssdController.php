@@ -9,12 +9,12 @@ class UssdController extends Controller
 {
     public function index()
     {
-    	$ussd = Ussd::machine()->set([
-		    'phone_number' => request('phoneNumber'),
-		    'network' => request('serviceCode'),
-		    'session_id' => request('sessionId'),
-		    'input' => request('text')
+    	$ussd = Ussd::machine()->setFromRequest([
+		    'phone_number',
+		    'network' => 'serviceCode',
+		    'session_id',
 		])
+		->setInput(substr(request('text'), strrpos(request('text'), '*') + 1))
 	    ->setInitialState(Welcome::class)
 	    ->setResponse(function(string $message, string $action) {
 	    	switch ($action) {
